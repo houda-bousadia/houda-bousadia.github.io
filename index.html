@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Houda Bousadia — Biomedical Engineering Portfolio</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d2327;--mut:#5d6a70;--card:#fff;--line:#e3e0d8;--acc:#0f7c78;--acc2:#e8f4f3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13181a;--fg:#e8ecec;--mut:#9aa8ad;--card:#1b2225;--line:#2c373b;--acc:#4fc7c1;--acc2:#183432}}
+:root[data-theme="dark"]{--bg:#13181a;--fg:#e8ecec;--mut:#9aa8ad;--card:#1b2225;--line:#2c373b;--acc:#4fc7c1;--acc2:#183432}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .w{display:flex;gap:18px;overflow-x:auto;padding:12px 20px;white-space:nowrap;font-size:14px}
+nav a{color:var(--mut);text-decoration:none}nav a:hover{color:var(--acc)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+header{padding:64px 0 40px}
+.kick{color:var(--acc);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+h1{font-size:clamp(34px,6vw,56px);margin:10px 0 14px}
+.lead{font-size:clamp(18px,2.4vw,22px);max-width:720px;color:var(--mut)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{padding:10px 18px;border-radius:999px;border:1px solid var(--acc);color:var(--acc);text-decoration:none;font-size:15px}
+.btn.p{background:var(--acc);color:var(--bg)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin-bottom:6px}.sub{color:var(--mut);margin:0 0 24px}
+.g3{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.c h3{font-size:19px;margin-bottom:8px}
+.tag{display:inline-block;font-size:12px;background:var(--acc2);color:var(--acc);padding:2px 10px;border-radius:999px;margin:3px 4px 0 0}
+.pr{margin-bottom:18px}.pr .meta{color:var(--mut);font-size:14px;margin:2px 0 12px}
+.pr p{margin:8px 0}.pr b{color:var(--acc)}
+.note{font-size:14px;color:var(--mut);border-left:3px solid var(--acc);padding:2px 12px;margin-top:10px}
+ul{padding-left:20px;margin:6px 0}li{margin:3px 0}
+.tl{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tl .c{border-top:4px solid var(--acc)}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+<nav><div class="w"><a href="#about">About</a><a href="#projects">Projects</a><a href="#neuro">Neuroscience</a><a href="#edu">Education</a><a href="#certs">Certifications</a><a href="#beyond">Beyond the lab</a><a href="#how">How I work</a><a href="#path">Path</a><a href="#contact">Contact</a></div></nav>
+
+<header><div class="w">
+<div class="kick">Biomedical engineering · Sorbonne Université · Paris</div>
+<h1>Houda Bousadia</h1>
+<p class="lead">I build sensing systems and adaptive algorithms for medical devices, and I carry them from a clinical question to something people can actually use. Currently turning toward neural engineering and neurotechnology.</p>
+<div class="cta"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div></header>
+
+<section id="about"><div class="w">
+<h2>The thread running through my work</h2>
+<p class="sub">Learn each profession’s language, design useful and ethical solutions, then take them to the people who need them.</p>
+<div class="g3">
+<div class="c"><h3>Measure</h3><p>Embedded electronics and sensors: optical and spectral sensing, flow and pressure sensors, STM32 microcontrollers, schematic design.</p></div>
+<div class="c"><h3>Adapt</h3><p>Self-calibrating algorithms that personalise a decision to each patient rather than applying one threshold to everyone.</p></div>
+<div class="c"><h3>Deliver</h3><p>Specifications, regulatory thinking (ISO 13485, MDR), work with clinicians, and an entrepreneurial reflex to ship something real.</p></div>
+</div>
+<p style="margin-top:22px">As a child I dreamed of living in different worlds and learning whatever skills each one required. I turned that into a method: understand how a clinician, an engineer, a client or an investor talks, and adapt my own language to theirs. I don’t want to stay in one field; I want to cross several, with one filter: it must be ethical and useful.</p>
+</div></section>
+
+<section id="projects"><div class="w">
+<h2>Projects</h2>
+<p class="sub">Some work is confidential or ongoing, so I describe the approach, my role and the lessons rather than internal parameters or data.</p>
+
+<div class="c pr"><h3>Non-invasive blood-loss monitoring during endoscopic urology</h3>
+<div class="meta">Team project with clinicians · Hôpital Tenon, Sorbonne Université · 2025–2026</div>
+<p><b>Problem.</b> Blood loss is hard to quantify in real time during endoscopic procedures, because it is mixed with irrigation fluid.</p>
+<p><b>What I did.</b> This was teamwork with no single lead. Together we agreed on a rough block diagram of what the system needed; I then designed the electronic circuit itself, sizing it and drawing the schematic in EasyEDA around an STM32 microcontroller, an AS7265x spectral sensor, an SLF3S flow sensor and an LED driver. Teammates wrote the embedded code and the bill of materials; because I was drawing the final, more complex circuit, I guided the component choices.</p>
+<p><b>What I learned.</b> Turning a clinical need into measurable physical quantities, and translating a team’s block diagram into a concrete, buildable circuit.</p>
+<span class="tag">Embedded electronics</span><span class="tag">Spectrophotometry</span><span class="tag">Signal processing</span><span class="tag">Clinical specs</span>
+<div class="note">Ongoing hospital project: design details are intentionally not published here.</div></div>
+
+<div class="c pr"><h3>AdaptStep — a self-calibrating threshold for Digi’Feet, a connected insole for the diabetic foot</h3>
+<div class="meta">Team leader of AdaptStep (5 students) · Sorbonne Université, Biomechanics module · 2025–2026 · Highest grade awarded</div>
+<p><b>Problem.</b> Before meeting the startups, I had studied the diabetic foot on my own and written the technical dossier below, around a problem I chose. Startups then gave us a brief related to that work, including Advanced Care Technology, whose product is the Digi’Feet insole; I formed the team (AdaptStep) and we worked on it. The core issue: a single pressure threshold is applied to every diabetic patient, yet the same pressure can be tolerated by one person and dangerous for another.</p>
+<p><b>What I did.</b> As team leader I wrote the specification and had it signed, assigning a role to each member. We then delivered code, results, a complete report and a full final presentation, covering a comparative study of sensor technologies for an instrumented insole, and the concept of an adaptive model that builds a personal baseline per foot zone, adjusts it with clinical covariates such as BMI and foot type, and updates over time only when data are reliable (sensor-confidence and posture-quality checks).</p>
+<p><b>Result.</b> On simulated clinical profiles, the personalised threshold clearly outperformed a fixed one on specificity and discrimination, with statistically significant differences.</p>
+<p><b>Limits.</b> Validation is on synthetic data only; real clinical validation is the necessary next step.</p>
+<span class="tag">Biomechanics</span><span class="tag">Bayesian adaptive modelling</span><span class="tag">Plantar-pressure sensing</span><span class="tag">Team leadership</span>
+<div class="note">Confidential academic deliverable: equations, thresholds, parameters and detailed figures are not disclosed. Available to discuss in person.</div></div>
+
+<div class="c pr"><h3>Connected insoles for the diabetic foot — individual technical dossier</h3>
+<div class="meta">Biomechanics module · Sorbonne Université, M1 · 2026</div>
+<p><b>Question.</b> To what extent do the neurovascular damage of diabetes compromise foot balance in static stance, and which technological and therapeutic approaches can compensate?</p>
+<p><b>What I did.</b> I worked through foot anatomy and static load distribution; how neuropathy, stiffened tissue and deformities converge into pressure hotspots; offloading and proprioceptive rehabilitation; the architecture of a connected insole (pressure sensors, microcontroller, BLE, power, sensor placement, processing pipeline, biofeedback); clinical evidence; and the regulatory path (EU MDR classification, ISO 13485, IEC 62304, IEC 60601-1) and reimbursement barriers. I also listed current limits: sensor drift, battery life, adherence and patient heterogeneity. This dossier came first; startups then gave us a brief related to it, which became the AdaptStep project.</p>
+<span class="tag">Biomechanics</span><span class="tag">Literature analysis</span><span class="tag">Medical-device regulation</span></div>
+
+<div class="c pr"><h3>Personal project — self-calibrating BCI decoder</h3>
+<div class="meta">Starting · 2026</div>
+<p>I want to extend the “adapt” idea to neural signals: a decoder that recalibrates itself as signals drift over time. This is also where I intend to put my EEG/MEG theory into practice, with Python and MNE-Python. It is at the planning stage; code, results and limitations will be published here once they are solid, not before.</p>
+<span class="tag">Neural decoding</span><span class="tag">Adaptive models</span><span class="tag">Python</span></div>
+
+<div class="c pr"><h3>3D segmentation of neuronal circuits — AxonEM challenge</h3>
+<div class="meta">Image-processing project · Sorbonne Université · 2025–2026</div>
+<p><b>What I did.</b> I analysed the challenge and the state of the art, and studied the flood-filling-network approach and its multi-run consensus and agglomeration steps. I prototyped the pre-processing and segmentation pipeline in Python on a subset of the data.</p>
+<p><b>Limits, honestly.</b> Storage limits prevented a full run, so I did not reach the final plausibility step. The main lesson is how heavy iterative neural reconstruction is on memory and compute, and why lighter successor methods matter.</p>
+<span class="tag">3D segmentation</span><span class="tag">Deep learning</span><span class="tag">Python</span></div>
+
+<div class="c pr"><h3>Radio-frequency absorption (SAR) in head tissues</h3>
+<div class="meta">Bioelectromagnetics project · Sorbonne Université · 2026</div>
+<p>I modelled head exposure to mobile-network antennas: from a homogeneous sphere to a multilayer skin/bone/brain model with attenuation with depth, several frequencies and antennas. I fitted a Debye dielectric model to measured tissue data, derived an equivalent R/C circuit, and compared results with ICNIRP reference levels and a real base-station case.</p>
+<span class="tag">Bioelectromagnetics</span><span class="tag">Dielectric modelling</span><span class="tag">MATLAB</span></div>
+
+<div class="g3">
+<div class="c"><h3>Inspire™ neurostimulator</h3><p>State-of-the-art review of an implantable device for sleep apnea (pathophysiology, trials, economics, patents). I proposed a design idea: sensing bioimpedance through the stimulation electrode to remove the intercostal sensor.</p></div>
+<div class="c"><h3>MultiGen 2 regulatory study</h3><p>Analysis of classification, patents and standards, clinical evidence, reimbursement (CCAM) and post-market surveillance (FDA MAUDE).</p></div>
+<div class="c"><h3>Earlier technical work</h3><p>Electronics analysis and prototyping (GEII laboratory, CY Cergy Paris Université); corrective and preventive maintenance of embedded rail systems (RATP, 7 weeks).</p></div>
+</div>
+</div></section>
+
+<section id="neuro"><div class="w">
+<h2>Neuroscience training</h2>
+<p class="sub">Non-invasive neuroimaging with EEG and MEG · Sorbonne Université, M1 · theoretical course · highest grade awarded</p>
+<div class="c"><ul>
+<li>Physical origin of EEG/MEG signals; SQUID and on-scalp OPM sensors; magnetic shielding.</li>
+<li>Noise and artifacts: bad channels, signal-space separation, filtering, ICA removal of ocular and cardiac artifacts.</li>
+<li>Epoching, evoked responses (mismatch negativity), time-resolved decoding.</li>
+<li>Forward problem (head conduction models) and inverse problem (source reconstruction).</li></ul><p class="note">The course was based on studying and discussing research articles; there were no practical sessions. I plan to put it into practice with Python in my personal BCI project.</p></div>
+</div></section>
+
+<section id="edu"><div class="w">
+<h2>Education &amp; transversal training</h2>
+<p class="sub">Alongside my EEA degree and Master’s, I followed the five-year CMI (Cursus Master en Ingénierie) at CY Tech, which added human, entrepreneurial and communication skills.</p>
+<div class="g3">
+<div class="c"><h3>Degrees</h3><ul><li>M2 Biomedical Engineering (Ingénierie pour la Santé), Sorbonne Université, 2026–2027</li><li>M1, same programme, 2025–2026</li><li>Licence EEA + CMI, CY Cergy Paris Université, 2022–2025</li><li>French and Algerian Baccalauréats, 2020</li></ul></div>
+<div class="c"><h3>Entrepreneurship &amp; design</h3><p>Entrepreneurship, project management, creativity and innovation (prototyping a project), introduction to design and design thinking.</p></div>
+<div class="c"><h3>Society &amp; ethics</h3><p>Sociology (my own research study, below), ethics, accounting, career-project and personal-project coaching.</p></div>
+<div class="c"><h3>Communication &amp; teamwork</h3><p>Eloquence using theatre techniques, communication and expression, interaction, cooperation and teamwork, English and French (Projet Voltaire).</p></div>
+</div>
+<div class="c pr" style="margin-top:14px"><h3>Aspirations and well-being — a sociology study</h3>
+<div class="meta">CMI sociology module · CY Tech, L2 · individual project</div>
+<p><b>Question.</b> How do a country’s socio-economic and cultural context shape individuals’ aspirations and well-being?</p>
+<p><b>What I did.</b> I reviewed the literature (gender, social origin, economic context), chose the question and five hypotheses myself, then ran a semi-structured online questionnaire (35 responses, mostly students aged 18–25) and four focus groups.</p>
+<p><b>Result.</b> Four hypotheses were supported, for example that well-being and ambition are tied to cultural and economic environment, and that women more often seek financial stability. One was rejected: aspirations did not shift generation after generation from financial stability toward “following a dream”.</p>
+<p><b>Limits.</b> Small, student-heavy sample, so the findings are indicative, not general.</p>
+<span class="tag">Survey design</span><span class="tag">Focus groups</span><span class="tag">Hypothesis testing</span></div>
+</div></section>
+
+<section id="certs"><div class="w">
+<h2>Certifications &amp; attestations</h2>
+<p class="sub">Verifiable recognitions, with links.</p>
+<div class="g3">
+<div class="c"><h3>Créa’Ton Impact — digital certificate</h3><p>Issued by CY Entreprendre (Dec 2024) through Prosoon for my role in a team during the 36-hour startup hackathon. It certifies entrepreneurial skills from the EU EntreComp framework: working with others, value-proposition design, ethical and sustainable thinking, communication, curiosity.</p><p><a href="https://app.prosoon.eu/shared/n9bSTWEtSYejZvwaaDj6KnEZeeNAfuWG">View the certificate</a></p></div>
+<div class="c"><h3>Chanson sans Frontières — originality mention</h3><p>Mention for originality for a French-language text, in the “Un monde inattendu” edition of the international songwriting contest.</p><p><a href="https://www.chansons-sans-frontieres.fr/le-concours/editions/un-monde-inattendu">See the results</a></p></div>
+<div class="c"><h3>National Student-Entrepreneur status</h3><p>Status (SNEE) granted through CY Entreprendre, the PEPITE hub of CY Cergy Paris Université.</p></div>
+<div class="c"><h3>English</h3><p>TOEIC (B2) obtained earlier in my Licence; a new session is planned for December 2026–January 2027.</p></div>
+</div>
+</div></section>
+
+<section id="beyond"><div class="w">
+<h2>Beyond the lab</h2>
+<p class="sub">Where my communication, initiative and resilience come from.</p>
+<div class="g3">
+<div class="c"><h3>Entrepreneurship</h3><p>Member of the team of <a href="https://www.namcours.com/">NamCours</a>, winner of the 1st prize at Créa’Ton Impact 2024 (36-hour startup hackathon, CY Entreprendre). I am not the project holder: NamCours is entirely its founder’s idea, and he had already built the website before the competition. All credit for the project is his. National Student-Entrepreneur status (SNEE). Separately, a low-tech vermicomposter project presented to a jury in a project-management course.</p></div>
+<div class="c"><h3>Teaching &amp; mentoring</h3><p>Volunteer homework mentor with EXPLI’CITÉ; volunteer assistant tennis coach for young and adult players; facilitator of climate workshops (Fresque du Climat).</p></div>
+<div class="c"><h3>Real-world jobs</h3><p>Station agent (SNCF, RATP): informing travellers and staying calm in crisis situations. Class delegate through secondary school in Algeria.</p></div>
+<div class="c"><h3>Foundations</h3><p>Mathematics (Algerian Baccalauréat, math olympiads). Languages: Arabic, French, and English (most of my Master’s courses and a professional-English module are in English; TOEIC retake planned for Dec 2026–Jan 2027). I write a lot, in many genres: a French-language text received an originality mention at the <a href="https://www.chansons-sans-frontieres.fr/le-concours/editions/un-monde-inattendu">Chanson sans Frontières contest</a> (edition “Un monde inattendu”).</p></div>
+</div>
+</div></section>
+
+<section id="how"><div class="w">
+<h2>How I work</h2>
+<p class="sub">From my career-guidance work and a psychometric profile (Praditus, Big Five-based).</p>
+<div class="g3">
+<div class="c"><h3>Flexible and hands-on</h3><p>I am comfortable with ambiguity, I test fast and adjust. I like concrete, challenging tasks where I can build something tangible.</p></div>
+<div class="c"><h3>Motivated by meaning</h3><p>I am driven by projects that go beyond me, by new challenges, creative teams and by influencing decisions through clear communication.</p></div>
+<div class="c"><h3>Compensating with method</h3><p>My taste for improvisation is balanced by rigour: statistical validation, train/test separation, quality standards, and regular check-ins with my supervisor.</p></div>
+</div>
+<p style="margin-top:18px">I learn by listening, then doing, and I pass it on. I prefer a supervisor who explains, then lets me run.</p>
+</div></section>
+
+<section id="path"><div class="w">
+<h2>Where I am going</h2>
+<div class="tl">
+<div class="c"><h3>Now</h3><p>Research internships in neural engineering, bioelectronics and personalised health, where research meets clinical use. I am especially drawn to EPFL, Campus Biotech and the Wyss Center (the Brain-Spine Digital Bridge and its partners’ problems), with neurotechnology as my current focus. M2 Biomedical Engineering, 2026–2027.</p></div>
+<div class="c"><h3>Next</h3><p>Ideally a PhD in research. Otherwise R&amp;D in a company, where I would learn how a business really works.</p></div>
+<div class="c"><h3>Longer term</h3><p>In parallel, I always want to open new ventures and explore new horizons: my own research topics, a credible first company, then a group that crosses fields, always ethical and useful.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="w">
+<h2>Contact</h2>
+<p>Open to research internships in 2027.</p>
+<div class="cta"><a class="btn p" href="mailto:houdabousadia11@gmail.com">houdabousadia11@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/houda-bousadia-669947246">LinkedIn</a></div>
+</div></section>
+<footer><div class="w">© 2026 Houda Bousadia · Confidential project details available on request.</div></footer>
+</body>
+</html>
