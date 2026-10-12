@@ -67,12 +67,25 @@ a{color:var(--acc)}
 <p class="sub">Some work is confidential or ongoing, so I describe the approach, my role and the lessons rather than internal parameters or data.</p>
 
 <div class="c pr"><h3>Non-invasive blood-loss monitoring during endoscopic urology</h3>
-<div class="meta">Team project with clinicians · Hôpital Tenon, Sorbonne Université · 2025–2026</div>
-<p><b>Problem.</b> Blood loss is hard to quantify in real time during endoscopic procedures, because it is mixed with irrigation fluid.</p>
-<p><b>What I did.</b> This was teamwork with no single lead. Together we agreed on a rough block diagram of what the system needed; I then designed the electronic circuit itself, sizing it and drawing the schematic in EasyEDA around an STM32 microcontroller, an AS7265x spectral sensor, an SLF3S flow sensor and a LED driver. Teammates wrote the embedded code and the bill of materials; because I was drawing the final, more complex circuit, I guided the component choices.</p>
-<p><b>What I learned.</b> Turning a clinical need into measurable physical quantities, and translating a team’s block diagram into a concrete, buildable circuit.</p>
-<span class="tag">Embedded electronics</span><span class="tag">Spectrophotometry</span><span class="tag">Signal processing</span><span class="tag">Clinical specs</span>
-<div class="note">Ongoing hospital project: design details are intentionally not published here.</div></div>
+<div class="meta">Hospital immersion internship · team of five · Hôpital Tenon (urology department), Sorbonne Université · 2025–2026</div>
+<p><b>Context.</b> Supervised by a urological surgeon, we followed endoscopic procedures in the operating theatre and saw how continuous irrigation keeps the surgical field visible, and how the whole team works around the patient.</p>
+<p><b>Problem.</b> Blood loss is hard to quantify in real time during endoscopic procedures, because it is diluted in irrigation fluid. Visual estimation is approximate, and blood tests give delayed, spot values. No standardised device quantifies intraoperative blood loss under continuous irrigation. Our question: how can we design a simple, non-invasive device, compatible with the operating theatre, that estimates blood loss in real time from the evacuated fluid?</p>
+<p><b>What we did as a team.</b></p>
+<ul>
+<li>Brainstormed the problem, then proposed requirement criteria to the surgeon to build the specification together.</li>
+<li>Identified four credible technical options, benchmarked and ranked them against the specification, discussed the results, and chose one solution.</li>
+<li>Imagined its concrete execution across four blocks: embedded code, mechanics, electronics and AI.</li>
+</ul>
+<p><b>My part.</b> The work was shared according to each person’s strengths. Mine was:</p>
+<ul>
+<li>researching one of the four options right after we received the problem, and writing a short state of the art on it before the benchmark;</li>
+<li>designing the complex circuit in EDA software, including the calculation of its components (resistors and others), from which the bill of materials was then drawn up.</li>
+</ul>
+<p>The embedded code, the AI part, the mechanical part and the other options were covered by my teammates. Because I was drawing the final circuit, I also guided their component choices.</p>
+<p><b>Status and limits.</b> The device is at concept stage. No prototype has been built or tested on model fluids with known blood concentrations yet; this is the next step.</p>
+<p><b>What I learned.</b> Turning a clinical need into a specification, comparing options honestly, and translating a team’s block diagram into a concrete, buildable circuit. Above all, that a medical device cannot be designed as a technical system alone: it has to fit clinical needs, the constraints of the theatre, the organisation of care and patient safety.</p>
+<span class="tag">Specification</span><span class="tag">Option benchmarking</span><span class="tag">Electronic circuit design</span><span class="tag">Clinical immersion</span><span class="tag">Teamwork</span>
+<div class="note">Concept-stage hospital project: only the approach is described here; internal design details are not published.</div></div>
 
 <div class="c pr"><h3>AdaptStep — a self-calibrating threshold for Digi’Feet, a connected insole for the diabetic foot</h3>
 <div class="meta">Team leader of AdaptStep (5 students) · Sorbonne Université, Biomechanics module · 2025–2026 · Highest grade awarded</div>
